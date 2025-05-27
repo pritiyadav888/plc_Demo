@@ -1,35 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PLC Web Design Demo</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Simple Data Type Game</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Welcome to My Web Page</h1>
-    <p>This is a simple HTML page.</p>
-    <p>Feel free to explore and learn more about HTML!</p>
-    <p>Here are some links to get you started:</p>
-    <ol>
-      <li>
-        <a href="https://www.w3schools.com/html/">W3Schools HTML Tutorial</a>
-      </li>
-      <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-          >MDN Web Docs on HTML</a
-        >
-      </li>
-      <li>
-        <a href="https://html.spec.whatwg.org/multipage/"
-          >HTML Living Standard</a
-        >
-      </li>
-    </ol>
-    <p>Enjoy your journey into web development!</p>
-    <footer>
-      <p>&copy; 2023 My Web Page</p>
-    </footer>
+    <h1>Is it a Number?</h1>
+    <p>
+      Enter something in the box and I'll tell you if it looks like a number!
+    </p>
+    <input type="text" id="inputToCheck" />
+    <button onclick="checkDataType()">Check!</button>
+    <button onclick="clearOutput()">Clear Output</button>
+    <div id="resultArea"></div>
+
+    <script src="script.js"></script>
   </body>
 </html>
